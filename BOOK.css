@@ -1,0 +1,189 @@
+body {   
+  /* Местоположение фоновой картинки */   background-image: url(images/background-photo.jpg);      
+  /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   background-position: center center;      
+  /* Фон не повторяется */   background-repeat: no-repeat;      
+  /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   background-attachment: fixed;      
+  /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   background-size: cover;      
+  /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   background-color: #464646; }
+
+
+
+  /* кнопка бургер =================================================================*/
+  <center class="btn">
+  <div></div>
+  </center>
+  
+  
+
+
+  body{
+    background:#111;
+    margin:0;
+    padding:0;}
+  .btn{
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    display:flex;
+    background:#111;
+    width:50px;
+    height:50px;
+    flex-wrap:wrap;
+  }
+  .btn>div {
+      margin:3px;
+      width: 50px;
+      height: 50px;
+      box-shadow: -1px -1px 5px red,  1px 1px 5px blue, inset 1px 1px 6px rgba(23,22,121, .9);
+      border-radius:5px;
+      color:#555;
+  }
+  div:hover {
+      margin:3px;
+      width: 10px;
+      height: 10px;
+      box-shadow: -1px -1px 5px red,  1px 1px 5px red, inset 1px 1px 6px rgba(23,22,121, .9);
+      border-radius:5px;
+      color:#555;
+      transition: .7s;
+      transform: rotate(0.5turn);
+    }
+
+  /* конец кнопка бургер =================================================================*/
+
+
+
+
+  /* НИШТЯЧОК_1 =================================================================*/
+
+  <center class="btn">
+<div></div>
+</center>
+
+  body{
+    background:#111;
+    margin:0;
+    padding:0;}
+  .btn{
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    display:flex;
+    background:#111;
+    width:50px;
+    height:50px;
+    flex-wrap:wrap;
+  }
+  .btn>div {
+      margin:3px;
+      width: 50px;
+      height: 50px;
+      box-shadow: -1px -1px 7px red,  1px 1px 7px blue, inset 1px 1px 6px rgba(23,22,121, .9);
+      border-radius:5px;
+      color:#555;
+  }
+  div:hover {
+      margin:30px;
+      width: 10px;
+      height: 10px;
+      box-shadow: 0px -1px 4px red,  0px 1px 5px blue;
+      border-radius:5px;
+      color:#555;
+      transform: rotate(0.5turn);
+      transition: .5s ease-in-out;
+    }
+  /* ништячок_1 =================================================================*/
+
+
+  /* анимационный градиентный куб ================================================================= */
+  <div class="animate-gradient">
+    <div class="animate-gradient-bg">
+    </div>
+  </div> 
+
+  .animate-gradient {
+    margin:20px;
+    position:relative;
+    height: 82px;
+    width: 82px;
+    padding:2px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: animate_gradient 5s ease infinite;
+  }
+  .animate-gradient:hover {
+    background: linear-gradient(0deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: animate_gradient .5s ease infinite;
+  }
+   
+  @keyframes animate_gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-gradient-bg{
+    position:relative;
+    content:'';
+    width:82px;
+    height:82px;
+    border-radius:10px;
+    background: #000;
+  }
+/* Конец анимационный куб ================================================================ */
+
+/* анимация-пульсация ================================================================== */
+<!--HTML-->
+<span class="pulse"></span>
+/*CSS*/
+.pulse {
+  margin:100px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #cca92c;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+/* конец анимая-пульсация ================================================================= */

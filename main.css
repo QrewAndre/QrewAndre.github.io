@@ -1,0 +1,269 @@
+* {margin:0;padding:0;}
+html { scroll-behavior: smooth;
+  /* убрать выделение текста */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+body{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 1px; /* ширина для вертикального скролла */
+    height: 5px; /* высота для горизонтального скролла */
+    background: linear-gradient(1deg, red, yellow, purple);
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00ff91, yellow , crimson);
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #80ff00;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+
+/*выпадающая линия*/
+.transition-width {
+    background: linear-gradient(90deg, red, blue);
+    box-shadow: 5px 0px 20px purple;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    max-width: 50px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.74, -0.01, 0.21, 0.33);
+  }
+  .transition-width:hover {
+    max-width: 250px;
+  }
+  .qwe{widht:400px;height:400px;}
+
+/*выпадающая линия конец*/
+
+
+/* гамбургер ----------------------------------------------------------------------*/
+body{
+  background:#111;
+  margin:0;
+  padding:0;}
+.btn{
+  position:absolute;
+  bottom:30px;
+  right:30px;
+  background:rgba(17, 17, 17, 0.082);
+  width:50px;
+  height:50px;
+}
+.btn>div {
+    margin:0;
+    width: 50px;
+    height: 50px;
+    box-shadow: -1px -1px 7px red,  1px 1px 7px blue;
+    border-radius:5px;
+    color:#555;
+    transition: .5s;
+    cursor:pointer;
+    
+}
+div:active {
+    margin:20px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px -1px 4px red,  0px 1px 5px blue;
+    border-radius:5px;
+    color:#555;
+    transform: rotate(0.5turn);
+    transition: .5s;
+  }
+
+  
+  .tabs {
+  float: left; /* Все вкладки располагаем в одну строку */
+  margin: 10px; /* Отступы вкладок друг от друга */
+}
+.content {
+  display: none; /* Скрываем содержимое */
+  padding-top: 20px; /* Чтобы название вкладки было ниже содержимого */
+  position: absolute; /* Чтобы содержимое не двигало элементы на странице */
+}
+.tabs:active .content {
+  display: block; /* Когда кликаем по вкладке, открываем содержимое content */
+}
+.content:hover {
+  display: block; /* Пока курсор наведён на контент, не закрываем его */
+}
+
+
+/* конец гамбурега--------------------------------------------------------- */
+
+
+
+
+
+
+.container1 {
+    margin:0;padding:0;
+}
+.container1_top{
+    background-image: url(./img/Halo+Edition+-+Joshua+Tree+3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container1_middle_top{
+    background: black;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+.container1_middle{
+    background-image: url(./img/_DSC1586.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+/* полоска scrollbar===============================*/
+.transition-width {
+  background: linear-gradient(90deg, red, blue);
+  box-shadow: 5px 0px 20px linear-gradient(90deg, red, blue);
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+  max-width: 50px;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.74, -0.01, 0.21, 0.33);
+}
+.transition-width:hover {
+  max-width: 250px;
+}
+.qwe{widht:400px;height:400px;}
+/* полоска scrollbar=======================================*/
+
+
+/*выпадающее ========================================================меню*/
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: rgba(58, 0, 255, 0.04);
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+/*выпадающее меню*/
+
+
+
