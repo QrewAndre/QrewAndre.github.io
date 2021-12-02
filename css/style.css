@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #000;
+    font-family: sans-serif;
+    background-color: rgb(54, 54, 54);
+}
+.button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: inherit;
+    list-style: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 2rem;
+    padding: 1em 2em;
+    border-radius: 0.3em;
+
+    background-color: rgb(32, 32, 32);
+}
+.button:hover::before {
+    animation-play-state: running;
+}
+.button::before {
+    content: "";
+    position: absolute;
+    top: -0.3em;
+    left: -0.3em;
+    z-index: -1;
+    display: block;
+    width: calc(100% + 0.6em);
+    height: calc(100% + 0.6em);
+    border-radius: .3em;
+    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 200%;
+    animation: animationbtn 2s ease infinite paused;
+}
+@keyframes animationbtn {
+    0% {
+        background-position: 200%;
+    }
+    25% {
+        background-position: 150%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    75% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
