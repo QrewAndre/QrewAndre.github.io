@@ -9,7 +9,12 @@ html { scroll-behavior: smooth;
   user-select: none;
 }
 body{
-  background: #000;
+  background-position: center center;
+  background-repeat: no-repeat;      
+  background-attachment: fixed;      
+  background-size: cover;      
+  background-color: #222;
+  height: 300%;
 }
 
 /* полоса прокрутки (скроллбар) */
@@ -22,8 +27,4 @@ body{
 ::-webkit-scrollbar-thumb {
     background: #00ff91;
     border-radius: 1em;
-}
-body{
-  background-image: url(../img/123.jpg);
-  background-size: cover;
 }

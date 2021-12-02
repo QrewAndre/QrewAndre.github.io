@@ -1,10 +1,11 @@
-body {   
-  /* Местоположение фоновой картинки */   background-image: url(images/background-photo.jpg);      
-  /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   background-position: center center;      
-  /* Фон не повторяется */   background-repeat: no-repeat;      
-  /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   background-attachment: fixed;      
-  /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   background-size: cover;      
-  /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   background-color: #464646; }
+body {
+  background-position: center center;
+  background-repeat: no-repeat;      
+  background-attachment: fixed;      
+  background-size: cover;      
+  background-color: #464646; 
+
+}
 
 
 
@@ -19,7 +20,11 @@ body {
   body{
     background:#111;
     margin:0;
-    padding:0;}
+    padding:0;
+    background-position: center center;
+
+  }
+    
   .btn{
     position:absolute;
     bottom:30px;
